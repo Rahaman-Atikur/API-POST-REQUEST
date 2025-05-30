@@ -1,8 +1,12 @@
-let handleUser = () => {
-    fetch('https://jsonplaceholder.typicode.com/posts')
-    .then(response=>response.json())
-    .then(data =>console.log(data))
-    .catch(error=>console.log("Error Found"))
+let handleUser = async () => {
+  try {
+    let response = await fetch("https://jsonplaceholder.typicode.com/users");
+    let data = await response.json();
+    console.log(data);
+  } 
+  catch {
+    console.log("Error Found");
+  }
 };
 
 handleUser();
