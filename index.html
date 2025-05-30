@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .card{
+            border: 2 px solid gray;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            background-color: skyblue;
+        }
+    </style>
 </head>
 <body>
     <button onclick="handleLoadData()">Load Data</button>
@@ -12,9 +21,17 @@
     <div class="users">
         <ul id="usersId"></ul>
     </div>
+
+    <!-- post button -->
+     <button onclick="handlePost()">Post Data</button>
+     <h1>Post Container</h1>
+     <div id="postContainer" class="post-container">
+
+     </div>
     <!-- <script src="app.js"></script> -->
     <script src="fetch.js"></script>
     <script src="moreApi.js"></script>
     <script src="dynamicData.js"></script>
+    <script src="post.js"></script>
 </body>
 </html>
